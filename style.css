@@ -89,3 +89,9 @@ div.wrapper > footer > p{
 }/*not quite sure what these are but it looks odd without them*/
 
 /*end of footer rules*/
+
+/*start of responsivity rules*/
+/*desktop*/
+@media only screen and (min-width: 768px) {
+
+}
