@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,21 @@
   <title>Project Page - template</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+  <script src="common.js"></script>
 </head>
+
 <body>
   <div class="wrapper">
     <header>
-      <!-- this needs to be able to be put in a dropdown for mobile -->
-      <nav>
+      <a href="https://its.teknikum.it/~zander/index.html">
+        <h1>Web Development</h1>
+      </a>
+      <div id="btnExpand">
+        &equiv;
+      </div>
+      <!-- dropdown content, not normally displayed on mobile -->
+      <nav class="collapsed">
         <ul>
-          <li>
-            <a href="https://its.teknikum.it/~zander/index.html">
-              <h1>Web Development</h1>
-            </a>
-          </li>
           <li>
             <a href="https://its.teknikum.it/~zander/about.html">
               About Me
@@ -46,24 +50,22 @@
     </main>
     <footer>
       <p>
-        Page made by Zander Koch. 
+        Page made by Zander Koch.
         <!-- alternatively:
              Page content by [your name]
              Layout by Zander koch-->
-    </p>
-    <p>
+      </p>
+      <p>
         Background taken from
         <a href="https://www.justnopoint.com/zweifuss/" target="_blank">
-            https://www.justnopoint.com/zweifuss/
-
-            <!-- external page icon, can't get it to work -->
-            <span class="icon">
-                <i class="fa fa-external-link" aria-hidden="true"></i>
-
-            </span>
+          https://www.justnopoint.com/zweifuss/
+          <span class="icon">
+            <i class="fa fa-external-link" aria-hidden="true"></i>
+          </span>
         </a>
-    </p>
+      </p>
     </footer>
   </div>
 </body>
+
 </html>
