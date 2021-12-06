@@ -36,6 +36,7 @@ div.wrapper > header{
         "site-header-nav site-header-nav site-header-nav";
 }
 
+
 div.wrapper > header > a{
     grid-area: site-header-text;
     width: min-content;
@@ -63,7 +64,7 @@ div.wrapper > header > nav.expanded{
     overflow-y: auto;
 }
 
-div.wrapper > header > nav.expanded > ul{
+div.wrapper > header > nav.expanded  ul{
     list-style-type: none;
 }
 /*end of site header rules*/
