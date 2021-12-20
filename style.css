@@ -36,11 +36,12 @@ div.wrapper > header{
         "site-header-nav site-header-nav site-header-nav";
 }
 
-
+/* site header link */
 div.wrapper > header > a{
     grid-area: site-header-text;
     width: min-content;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 div.wrapper > header > a > h1{
@@ -97,6 +98,24 @@ div.wrapper > footer > p{
 
 /*start of responsivity rules*/
 /*desktop*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
+    /*start of site header rules*/
+    div.wrapper > header{
+        background: rgba(240, 240, 240, 0.85);
+        display: grid;
+        min-height: 3em;
+        max-height: 100vh;
+        width: 100%;
 
+        grid-template-columns: max-content auto;
+        grid-template-rows: 3em 0%;
+        grid-template-areas:
+            "site-header-text site-header-nav";
+        
+    }
+    
+    main{
+        margin-left: 10%;
+        width: 80%;
+    }
 }
