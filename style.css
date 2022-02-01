@@ -67,6 +67,7 @@ div.wrapper > header > nav.expanded{
 
 div.wrapper > header > nav.expanded  ul{
     list-style-type: none;
+    text-align: center;
 }
 /*end of site header rules*/
 
@@ -98,7 +99,7 @@ div.wrapper > footer > p{
 
 /*start of responsivity rules*/
 /*desktop*/
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px){
     /*start of site header rules*/
     div.wrapper > header{
         background: rgba(240, 240, 240, 0.85);
@@ -111,9 +112,34 @@ div.wrapper > footer > p{
         grid-template-rows: 3em 0%;
         grid-template-areas:
             "site-header-text site-header-nav";
-        
+    }
+
+    /*header expand button rules*/
+    div.wrapper > header > div{
+        display: none;
+    }
+
+    div > header > nav{
+        /*TOO SHORT!!*/
     }
     
+    div > header > nav > ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    div > header > nav > ul > li{
+        flex-grow: 1;
+        height: auto;
+        vertical-align: middle;
+    }
+
+    div > header > nav > ul > li a{
+        size: auto;
+    }
+
     main{
         margin-left: 10%;
         width: 80%;

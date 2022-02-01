@@ -6,5 +6,5 @@
 let siteHeaderNavExpanded = false;
 
 function main(){
-    
+    let siteHeaderNav = document.querySelector("div.wrapper > header > nav")
 }
